@@ -6,7 +6,6 @@ export const createquestion = async (req, res) => {
             AssginmentId:req.query.AssginmentId,
             userId:req.body.userId,
             ques:req.body.ques,     
-            writeAnswer:req.body.writeAnswer     
             })
         let st=await register.save()
         res.status(201).json({ message:" success",data: st});

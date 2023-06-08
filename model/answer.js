@@ -12,9 +12,9 @@ const answer=  new mongoose.Schema({
           },
     QuestionpaperId: {
             type: mongoose.Schema.Types.ObjectId,
-            ref: "Assginment",
+            ref: "Question",
           },
-    mark:[
+    write:[
         {
        questionNo:{
         type:Number,
