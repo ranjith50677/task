@@ -19,8 +19,8 @@ app.get("/",(req,res)=>{
     res.send("Welcome to HRMS task2")
 }) 
 app.use("/user",route) 
-app.use("/assginment",assginment) 
-app.use("/question",question) 
+// app.use("/assginment",assginment) 
+// app.use("/question",question) 
 
 
 app.listen(port, () => console.log('server running on  '+port));

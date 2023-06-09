@@ -14,7 +14,8 @@ const answer=  new mongoose.Schema({
             type: mongoose.Schema.Types.ObjectId,
             ref: "Question",
           },
-    write:[
+
+    AnswerSheet:[
         {
        questionNo:{
         type:Number,
@@ -26,6 +27,11 @@ const answer=  new mongoose.Schema({
         },
     }
     ],
+    Attend:{
+        type:String,
+        required: true,
+        enum:["Attented","Not Attented"]
+    },
     totalMark:{
         type:Number,
     }
