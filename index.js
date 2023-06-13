@@ -2,8 +2,8 @@ import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import express from 'express';
 import route from './router/users.js';
-import question from './router/questions.js';
-import assginment from './router/Assginment.js';
+// import question from './router/questions.js';
+// import assginment from './router/Assginment.js';
 
 const app = express()
 const port = process.env.PORT || 2000

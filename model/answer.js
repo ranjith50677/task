@@ -14,16 +14,27 @@ const answer=  new mongoose.Schema({
             type: mongoose.Schema.Types.ObjectId,
             ref: "Question",
           },
-
+      
+      name:{
+            type:String,
+            required: true
+            },
+      class:{
+            type:String,
+            required: true
+            },
+      subject:{
+            type:String,
+            required: true
+            },
     AnswerSheet:[
         {
        questionNo:{
         type:Number,
-        required: true
+    
         },
        Answer:{
         type:String,
-        required: true
         },
     }
     ],
@@ -36,6 +47,7 @@ const answer=  new mongoose.Schema({
         type:Number,
     }
     })
+
 
 const Answer=mongoose.model('Answer',answer)
 export default Answer;

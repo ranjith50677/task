@@ -1,5 +1,5 @@
 import Assginment from "../model/assginment.js";
-import User from "../model/student.js";
+
 export const createAssginment = async (req, res) => {
   let AssginmentName=req.body.AssginmentName;
   let Assginmenttype=req.body.Assginmenttype

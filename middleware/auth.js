@@ -8,7 +8,7 @@ async function auth(req,res,next){
     try {
         const decoded=jwt.verify(token,process.env.JWT)
         req.user=decoded
-        let user = await User.findById({_id:req.user.id})
+        let user = await User.findById({_id:req.user.id}) 
         // console.log(user);
         req.user={...req.user,faculty:user.faculty}
         // console.log(req.user);

@@ -39,7 +39,10 @@ const question = new mongoose.Schema({
       },
     },
   ],
-    
+  totaltestMark: {
+    type: Number,
+    required: true,
+  },
 
 });
 

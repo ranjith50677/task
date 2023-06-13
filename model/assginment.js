@@ -13,7 +13,6 @@ const assginment =  new mongoose.Schema({
         type:String,
         required: true
     },
-    
 },{
     timestamps:true
 });
